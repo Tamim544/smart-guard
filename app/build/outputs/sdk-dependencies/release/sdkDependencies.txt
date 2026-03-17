@@ -1054,6 +1054,32 @@ library {
   repo_index {
   }
 }
+library {
+  maven_library {
+    groupId: "com.sun.mail"
+    artifactId: "android-mail"
+    version: "1.6.7"
+  }
+  digests {
+    sha256: "\022\304$\n\243\244\314\3327\304\233Nk\210\nyz!\340:O\214t!\241\265\036\r\265R\267\234"
+  }
+  repo_index {
+    value: 1
+  }
+}
+library {
+  maven_library {
+    groupId: "com.sun.mail"
+    artifactId: "android-activation"
+    version: "1.6.7"
+  }
+  digests {
+    sha256: "(W\023\262\265I\363\202\362jW\221\236\315\334L\203\331uW7\226\237\267\300\006\311\0052+\262S"
+  }
+  repo_index {
+    value: 1
+  }
+}
 library_dependencies {
   library_dep_index: 1
 }
@@ -1780,6 +1806,10 @@ library_dependencies {
   library_dep_index: 23
   library_dep_index: 22
 }
+library_dependencies {
+  library_index: 89
+  library_dep_index: 90
+}
 module_dependencies {
   module_name: "base"
   dependency_index: 0
@@ -1801,6 +1831,8 @@ module_dependencies {
   dependency_index: 38
   dependency_index: 31
   dependency_index: 32
+  dependency_index: 89
+  dependency_index: 90
 }
 repositories {
   maven_repo {

@@ -1,15 +1,23 @@
 [
     {
-        "merged": "com.smartguard.app-mergeReleaseResources-45:/layout/activity_dashboard.xml",
-        "source": "com.smartguard.app-main-47:/layout/activity_dashboard.xml"
+        "merged": "/Users/tamimchowdhury/.gradle/daemon/9.0-milestone-1/com.smartguard.app-mergeReleaseResources-45:/layout/activity_main.xml",
+        "source": "/Users/tamimchowdhury/.gradle/daemon/9.0-milestone-1/com.smartguard.app-main-47:/layout/activity_main.xml"
     },
     {
-        "merged": "com.smartguard.app-mergeReleaseResources-45:/layout/item_incident.xml",
-        "source": "com.smartguard.app-main-47:/layout/item_incident.xml"
+        "merged": "/Users/tamimchowdhury/.gradle/daemon/9.0-milestone-1/com.smartguard.app-mergeReleaseResources-45:/layout/item_incident.xml",
+        "source": "/Users/tamimchowdhury/.gradle/daemon/9.0-milestone-1/com.smartguard.app-main-47:/layout/item_incident.xml"
     },
     {
-        "merged": "com.smartguard.app-mergeReleaseResources-45:/layout/activity_history.xml",
-        "source": "com.smartguard.app-main-47:/layout/activity_history.xml"
+        "merged": "/Users/tamimchowdhury/.gradle/daemon/9.0-milestone-1/com.smartguard.app-mergeReleaseResources-45:/layout/activity_dashboard.xml",
+        "source": "/Users/tamimchowdhury/.gradle/daemon/9.0-milestone-1/com.smartguard.app-main-47:/layout/activity_dashboard.xml"
+    },
+    {
+        "merged": "com.smartguard.app-mergeReleaseResources-45:/layout/activity_settings.xml",
+        "source": "com.smartguard.app-main-47:/layout/activity_settings.xml"
+    },
+    {
+        "merged": "/Users/tamimchowdhury/.gradle/daemon/9.0-milestone-1/com.smartguard.app-mergeReleaseResources-45:/layout/activity_history.xml",
+        "source": "/Users/tamimchowdhury/.gradle/daemon/9.0-milestone-1/com.smartguard.app-main-47:/layout/activity_history.xml"
     },
     {
         "merged": "com.smartguard.app-mergeReleaseResources-45:/layout/activity_main.xml",

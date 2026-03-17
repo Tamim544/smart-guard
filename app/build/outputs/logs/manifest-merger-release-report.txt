@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from /Users/tamimchowdhury/Android studio project/app/src/main/AndroidManifest.xml:2:1-43:12
-INJECTED from /Users/tamimchowdhury/Android studio project/app/src/main/AndroidManifest.xml:2:1-43:12
-INJECTED from /Users/tamimchowdhury/Android studio project/app/src/main/AndroidManifest.xml:2:1-43:12
-INJECTED from /Users/tamimchowdhury/Android studio project/app/src/main/AndroidManifest.xml:2:1-43:12
+ADDED from /Users/tamimchowdhury/Android studio project/app/src/main/AndroidManifest.xml:2:1-76:12
+INJECTED from /Users/tamimchowdhury/Android studio project/app/src/main/AndroidManifest.xml:2:1-76:12
+INJECTED from /Users/tamimchowdhury/Android studio project/app/src/main/AndroidManifest.xml:2:1-76:12
+INJECTED from /Users/tamimchowdhury/Android studio project/app/src/main/AndroidManifest.xml:2:1-76:12
 MERGED from [androidx.databinding:viewbinding:8.2.2] /Users/tamimchowdhury/.gradle/caches/9.0-milestone-1/transforms/86faa8673596e85fb7b1d6fd30343999/transformed/jetified-viewbinding-8.2.2/AndroidManifest.xml:2:1-7:12
 MERGED from [com.google.android.material:material:1.11.0] /Users/tamimchowdhury/.gradle/caches/9.0-milestone-1/transforms/54c617c35ec816b579d9fadbe3b1fd0d/transformed/material-1.11.0/AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.constraintlayout:constraintlayout:2.1.4] /Users/tamimchowdhury/.gradle/caches/9.0-milestone-1/transforms/23f1d5b73cc4b4b9412e9baf85248877/transformed/constraintlayout-2.1.4/AndroidManifest.xml:2:1-11:12
@@ -111,9 +111,25 @@ uses-permission#android.permission.INTERNET
 ADDED from /Users/tamimchowdhury/Android studio project/app/src/main/AndroidManifest.xml:13:5-67
 	android:name
 		ADDED from /Users/tamimchowdhury/Android studio project/app/src/main/AndroidManifest.xml:13:22-64
+uses-permission#android.permission.ACCESS_NETWORK_STATE
+ADDED from /Users/tamimchowdhury/Android studio project/app/src/main/AndroidManifest.xml:14:5-79
+	android:name
+		ADDED from /Users/tamimchowdhury/Android studio project/app/src/main/AndroidManifest.xml:14:22-76
+uses-permission#android.permission.ACCESS_WIFI_STATE
+ADDED from /Users/tamimchowdhury/Android studio project/app/src/main/AndroidManifest.xml:15:5-76
+	android:name
+		ADDED from /Users/tamimchowdhury/Android studio project/app/src/main/AndroidManifest.xml:15:22-73
+uses-permission#android.permission.CHANGE_WIFI_STATE
+ADDED from /Users/tamimchowdhury/Android studio project/app/src/main/AndroidManifest.xml:16:5-76
+	android:name
+		ADDED from /Users/tamimchowdhury/Android studio project/app/src/main/AndroidManifest.xml:16:22-73
+uses-permission#android.permission.RECEIVE_BOOT_COMPLETED
+ADDED from /Users/tamimchowdhury/Android studio project/app/src/main/AndroidManifest.xml:17:5-81
+	android:name
+		ADDED from /Users/tamimchowdhury/Android studio project/app/src/main/AndroidManifest.xml:17:22-78
 application
-ADDED from /Users/tamimchowdhury/Android studio project/app/src/main/AndroidManifest.xml:15:5-41:19
-INJECTED from /Users/tamimchowdhury/Android studio project/app/src/main/AndroidManifest.xml:15:5-41:19
+ADDED from /Users/tamimchowdhury/Android studio project/app/src/main/AndroidManifest.xml:19:5-74:19
+INJECTED from /Users/tamimchowdhury/Android studio project/app/src/main/AndroidManifest.xml:19:5-74:19
 MERGED from [com.google.android.material:material:1.11.0] /Users/tamimchowdhury/.gradle/caches/9.0-milestone-1/transforms/54c617c35ec816b579d9fadbe3b1fd0d/transformed/material-1.11.0/AndroidManifest.xml:22:5-20
 MERGED from [com.google.android.material:material:1.11.0] /Users/tamimchowdhury/.gradle/caches/9.0-milestone-1/transforms/54c617c35ec816b579d9fadbe3b1fd0d/transformed/material-1.11.0/AndroidManifest.xml:22:5-20
 MERGED from [androidx.constraintlayout:constraintlayout:2.1.4] /Users/tamimchowdhury/.gradle/caches/9.0-milestone-1/transforms/23f1d5b73cc4b4b9412e9baf85248877/transformed/constraintlayout-2.1.4/AndroidManifest.xml:9:5-20
@@ -151,51 +167,95 @@ MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /Users/tami
 	android:appComponentFactory
 		ADDED from [androidx.core:core:1.12.0] /Users/tamimchowdhury/.gradle/caches/9.0-milestone-1/transforms/3a59e1a0ee9726abe7366d41a59dfefb/transformed/core-1.12.0/AndroidManifest.xml:28:18-86
 	android:supportsRtl
-		ADDED from /Users/tamimchowdhury/Android studio project/app/src/main/AndroidManifest.xml:20:9-35
+		ADDED from /Users/tamimchowdhury/Android studio project/app/src/main/AndroidManifest.xml:24:9-35
 	android:label
-		ADDED from /Users/tamimchowdhury/Android studio project/app/src/main/AndroidManifest.xml:18:9-41
+		ADDED from /Users/tamimchowdhury/Android studio project/app/src/main/AndroidManifest.xml:22:9-41
 	android:roundIcon
-		ADDED from /Users/tamimchowdhury/Android studio project/app/src/main/AndroidManifest.xml:19:9-61
+		ADDED from /Users/tamimchowdhury/Android studio project/app/src/main/AndroidManifest.xml:23:9-61
 	android:icon
-		ADDED from /Users/tamimchowdhury/Android studio project/app/src/main/AndroidManifest.xml:17:9-56
+		ADDED from /Users/tamimchowdhury/Android studio project/app/src/main/AndroidManifest.xml:21:9-56
 	android:allowBackup
-		ADDED from /Users/tamimchowdhury/Android studio project/app/src/main/AndroidManifest.xml:16:9-35
+		ADDED from /Users/tamimchowdhury/Android studio project/app/src/main/AndroidManifest.xml:20:9-35
 	android:theme
-		ADDED from /Users/tamimchowdhury/Android studio project/app/src/main/AndroidManifest.xml:21:9-48
+		ADDED from /Users/tamimchowdhury/Android studio project/app/src/main/AndroidManifest.xml:25:9-48
 activity#com.smartguard.app.activities.MainActivity
-ADDED from /Users/tamimchowdhury/Android studio project/app/src/main/AndroidManifest.xml:23:9-30:20
+ADDED from /Users/tamimchowdhury/Android studio project/app/src/main/AndroidManifest.xml:27:9-34:20
 	android:exported
-		ADDED from /Users/tamimchowdhury/Android studio project/app/src/main/AndroidManifest.xml:25:13-36
+		ADDED from /Users/tamimchowdhury/Android studio project/app/src/main/AndroidManifest.xml:29:13-36
 	android:name
-		ADDED from /Users/tamimchowdhury/Android studio project/app/src/main/AndroidManifest.xml:24:13-52
+		ADDED from /Users/tamimchowdhury/Android studio project/app/src/main/AndroidManifest.xml:28:13-52
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from /Users/tamimchowdhury/Android studio project/app/src/main/AndroidManifest.xml:26:13-29:29
+ADDED from /Users/tamimchowdhury/Android studio project/app/src/main/AndroidManifest.xml:30:13-33:29
 action#android.intent.action.MAIN
-ADDED from /Users/tamimchowdhury/Android studio project/app/src/main/AndroidManifest.xml:27:17-69
+ADDED from /Users/tamimchowdhury/Android studio project/app/src/main/AndroidManifest.xml:31:17-69
 	android:name
-		ADDED from /Users/tamimchowdhury/Android studio project/app/src/main/AndroidManifest.xml:27:25-66
+		ADDED from /Users/tamimchowdhury/Android studio project/app/src/main/AndroidManifest.xml:31:25-66
 category#android.intent.category.LAUNCHER
-ADDED from /Users/tamimchowdhury/Android studio project/app/src/main/AndroidManifest.xml:28:17-77
+ADDED from /Users/tamimchowdhury/Android studio project/app/src/main/AndroidManifest.xml:32:17-77
 	android:name
-		ADDED from /Users/tamimchowdhury/Android studio project/app/src/main/AndroidManifest.xml:28:27-74
+		ADDED from /Users/tamimchowdhury/Android studio project/app/src/main/AndroidManifest.xml:32:27-74
 activity#com.smartguard.app.activities.HistoryActivity
-ADDED from /Users/tamimchowdhury/Android studio project/app/src/main/AndroidManifest.xml:32:9-64
+ADDED from /Users/tamimchowdhury/Android studio project/app/src/main/AndroidManifest.xml:36:9-64
 	android:name
-		ADDED from /Users/tamimchowdhury/Android studio project/app/src/main/AndroidManifest.xml:32:19-61
+		ADDED from /Users/tamimchowdhury/Android studio project/app/src/main/AndroidManifest.xml:36:19-61
 activity#com.smartguard.app.activities.SecurityDashboardActivity
-ADDED from /Users/tamimchowdhury/Android studio project/app/src/main/AndroidManifest.xml:33:9-74
+ADDED from /Users/tamimchowdhury/Android studio project/app/src/main/AndroidManifest.xml:37:9-74
 	android:name
-		ADDED from /Users/tamimchowdhury/Android studio project/app/src/main/AndroidManifest.xml:33:19-71
+		ADDED from /Users/tamimchowdhury/Android studio project/app/src/main/AndroidManifest.xml:37:19-71
+activity#com.smartguard.app.activities.SettingsActivity
+ADDED from /Users/tamimchowdhury/Android studio project/app/src/main/AndroidManifest.xml:38:9-65
+	android:name
+		ADDED from /Users/tamimchowdhury/Android studio project/app/src/main/AndroidManifest.xml:38:19-62
 service#com.smartguard.app.service.MotionDetectionService
-ADDED from /Users/tamimchowdhury/Android studio project/app/src/main/AndroidManifest.xml:35:9-39:77
+ADDED from /Users/tamimchowdhury/Android studio project/app/src/main/AndroidManifest.xml:41:9-45:77
 	android:enabled
-		ADDED from /Users/tamimchowdhury/Android studio project/app/src/main/AndroidManifest.xml:37:13-35
+		ADDED from /Users/tamimchowdhury/Android studio project/app/src/main/AndroidManifest.xml:43:13-35
 	android:exported
-		ADDED from /Users/tamimchowdhury/Android studio project/app/src/main/AndroidManifest.xml:38:13-37
+		ADDED from /Users/tamimchowdhury/Android studio project/app/src/main/AndroidManifest.xml:44:13-37
 	android:foregroundServiceType
-		ADDED from /Users/tamimchowdhury/Android studio project/app/src/main/AndroidManifest.xml:39:13-74
+		ADDED from /Users/tamimchowdhury/Android studio project/app/src/main/AndroidManifest.xml:45:13-74
 	android:name
-		ADDED from /Users/tamimchowdhury/Android studio project/app/src/main/AndroidManifest.xml:36:13-59
+		ADDED from /Users/tamimchowdhury/Android studio project/app/src/main/AndroidManifest.xml:42:13-59
+service#com.smartguard.app.service.AntiTheftService
+ADDED from /Users/tamimchowdhury/Android studio project/app/src/main/AndroidManifest.xml:48:9-52:77
+	android:enabled
+		ADDED from /Users/tamimchowdhury/Android studio project/app/src/main/AndroidManifest.xml:50:13-35
+	android:exported
+		ADDED from /Users/tamimchowdhury/Android studio project/app/src/main/AndroidManifest.xml:51:13-37
+	android:foregroundServiceType
+		ADDED from /Users/tamimchowdhury/Android studio project/app/src/main/AndroidManifest.xml:52:13-74
+	android:name
+		ADDED from /Users/tamimchowdhury/Android studio project/app/src/main/AndroidManifest.xml:49:13-53
+service#com.smartguard.app.service.ShutdownPreventionService
+ADDED from /Users/tamimchowdhury/Android studio project/app/src/main/AndroidManifest.xml:55:9-59:63
+	android:enabled
+		ADDED from /Users/tamimchowdhury/Android studio project/app/src/main/AndroidManifest.xml:57:13-35
+	android:exported
+		ADDED from /Users/tamimchowdhury/Android studio project/app/src/main/AndroidManifest.xml:58:13-37
+	android:foregroundServiceType
+		ADDED from /Users/tamimchowdhury/Android studio project/app/src/main/AndroidManifest.xml:59:13-60
+	android:name
+		ADDED from /Users/tamimchowdhury/Android studio project/app/src/main/AndroidManifest.xml:56:13-62
+receiver#com.smartguard.app.receiver.FailedLoginReceiver
+ADDED from /Users/tamimchowdhury/Android studio project/app/src/main/AndroidManifest.xml:62:9-72:20
+	android:exported
+		ADDED from /Users/tamimchowdhury/Android studio project/app/src/main/AndroidManifest.xml:64:13-36
+	android:permission
+		ADDED from /Users/tamimchowdhury/Android studio project/app/src/main/AndroidManifest.xml:65:13-70
+	android:name
+		ADDED from /Users/tamimchowdhury/Android studio project/app/src/main/AndroidManifest.xml:63:13-57
+meta-data#android.app.device_admin
+ADDED from /Users/tamimchowdhury/Android studio project/app/src/main/AndroidManifest.xml:66:13-68:56
+	android:resource
+		ADDED from /Users/tamimchowdhury/Android studio project/app/src/main/AndroidManifest.xml:68:17-53
+	android:name
+		ADDED from /Users/tamimchowdhury/Android studio project/app/src/main/AndroidManifest.xml:67:17-56
+intent-filter#action:name:android.app.action.DEVICE_ADMIN_ENABLED
+ADDED from /Users/tamimchowdhury/Android studio project/app/src/main/AndroidManifest.xml:69:13-71:29
+action#android.app.action.DEVICE_ADMIN_ENABLED
+ADDED from /Users/tamimchowdhury/Android studio project/app/src/main/AndroidManifest.xml:70:17-82
+	android:name
+		ADDED from /Users/tamimchowdhury/Android studio project/app/src/main/AndroidManifest.xml:70:25-79
 uses-sdk
 INJECTED from /Users/tamimchowdhury/Android studio project/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from /Users/tamimchowdhury/Android studio project/app/src/main/AndroidManifest.xml

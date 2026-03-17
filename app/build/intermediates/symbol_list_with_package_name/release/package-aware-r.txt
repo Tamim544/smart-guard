@@ -3223,6 +3223,11 @@ id bounceEnd
 id bounceStart
 id btnActivate
 id btnDeactivate
+id btnEnableAdmin
+id btnHowToGetPassword
+id btnSave
+id btnSettings
+id btnTestEmail
 id btnViewHistory
 id buttonPanel
 id cache_measures
@@ -3307,6 +3312,9 @@ id end
 id endToStart
 id enterAlways
 id enterAlwaysCollapsed
+id etAppPassword
+id etEmail
+id etThreshold
 id exitUntilCollapsed
 id expand_activities_button
 id expanded_menu
@@ -3562,6 +3570,8 @@ id stretch
 id submenuarrow
 id submit_area
 id supportScrollUp
+id switchAntiTheft
+id switchShutdown
 id tabMode
 id tag_accessibility_actions
 id tag_accessibility_clickable_spans
@@ -3610,6 +3620,8 @@ id transition_transform
 id triangle
 id tvEventType
 id tvLocation
+id tvSetupInfo
+id tvSetupStatus
 id tvStatus
 id tvTimestamp
 id tvTitle
@@ -3755,6 +3767,7 @@ layout abc_tooltip
 layout activity_dashboard
 layout activity_history
 layout activity_main
+layout activity_settings
 layout custom_dialog
 layout design_bottom_navigation_item
 layout design_bottom_sheet_dialog
@@ -5295,3 +5308,4 @@ styleable ViewPager2 android_orientation
 styleable ViewStubCompat android_id android_layout android_inflatedId
 styleable ViewTransition android_id SharedValue SharedValueId clearsTag duration ifTagNotSet ifTagSet motionInterpolator motionTarget onStateTransition pathMotionArc setsTag transitionDisable upDuration viewTransitionMode
 styleable include constraintSet
+xml device_admin

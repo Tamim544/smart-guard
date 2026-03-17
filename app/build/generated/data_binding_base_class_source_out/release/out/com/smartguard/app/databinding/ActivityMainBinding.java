@@ -24,7 +24,16 @@ public final class ActivityMainBinding implements ViewBinding {
   public final Button btnActivate;
 
   @NonNull
+  public final Button btnEnableAdmin;
+
+  @NonNull
+  public final Button btnSettings;
+
+  @NonNull
   public final Button btnViewHistory;
+
+  @NonNull
+  public final TextView tvSetupInfo;
 
   @NonNull
   public final TextView tvStatus;
@@ -33,10 +42,14 @@ public final class ActivityMainBinding implements ViewBinding {
   public final TextView tvTitle;
 
   private ActivityMainBinding(@NonNull LinearLayout rootView, @NonNull Button btnActivate,
-      @NonNull Button btnViewHistory, @NonNull TextView tvStatus, @NonNull TextView tvTitle) {
+      @NonNull Button btnEnableAdmin, @NonNull Button btnSettings, @NonNull Button btnViewHistory,
+      @NonNull TextView tvSetupInfo, @NonNull TextView tvStatus, @NonNull TextView tvTitle) {
     this.rootView = rootView;
     this.btnActivate = btnActivate;
+    this.btnEnableAdmin = btnEnableAdmin;
+    this.btnSettings = btnSettings;
     this.btnViewHistory = btnViewHistory;
+    this.tvSetupInfo = tvSetupInfo;
     this.tvStatus = tvStatus;
     this.tvTitle = tvTitle;
   }
@@ -74,9 +87,27 @@ public final class ActivityMainBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.btnEnableAdmin;
+      Button btnEnableAdmin = ViewBindings.findChildViewById(rootView, id);
+      if (btnEnableAdmin == null) {
+        break missingId;
+      }
+
+      id = R.id.btnSettings;
+      Button btnSettings = ViewBindings.findChildViewById(rootView, id);
+      if (btnSettings == null) {
+        break missingId;
+      }
+
       id = R.id.btnViewHistory;
       Button btnViewHistory = ViewBindings.findChildViewById(rootView, id);
       if (btnViewHistory == null) {
+        break missingId;
+      }
+
+      id = R.id.tvSetupInfo;
+      TextView tvSetupInfo = ViewBindings.findChildViewById(rootView, id);
+      if (tvSetupInfo == null) {
         break missingId;
       }
 
@@ -92,8 +123,8 @@ public final class ActivityMainBinding implements ViewBinding {
         break missingId;
       }
 
-      return new ActivityMainBinding((LinearLayout) rootView, btnActivate, btnViewHistory, tvStatus,
-          tvTitle);
+      return new ActivityMainBinding((LinearLayout) rootView, btnActivate, btnEnableAdmin,
+          btnSettings, btnViewHistory, tvSetupInfo, tvStatus, tvTitle);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

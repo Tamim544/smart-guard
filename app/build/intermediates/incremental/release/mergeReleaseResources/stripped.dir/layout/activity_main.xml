@@ -10,7 +10,7 @@
         android:id="@+id/tvTitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="SmartGuard"
+        android:text="🛡️ SmartGuard"
         android:textSize="32sp"
         android:textStyle="bold" />
 
@@ -22,20 +22,48 @@
         android:text="Status: OFF"
         android:textSize="18sp" />
 
+    <TextView
+        android:id="@+id/tvSetupInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text=""
+        android:textColor="?android:attr/textColorSecondary"
+        android:textSize="13sp"
+        android:gravity="center" />
+
     <Button
         android:id="@+id/btnActivate"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="48dp"
+        android:layout_marginTop="32dp"
         android:padding="16dp"
         android:text="ACTIVATE PROTECTION" />
+
+    <Button
+        android:id="@+id/btnEnableAdmin"
+        style="@style/Widget.Material3.Button.TonalButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:padding="16dp"
+        android:text="🔐 ENABLE DEVICE ADMIN" />
+
+    <Button
+        android:id="@+id/btnSettings"
+        style="@style/Widget.Material3.Button.OutlinedButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:padding="16dp"
+        android:text="⚙️ SETTINGS" />
 
     <Button
         android:id="@+id/btnViewHistory"
         style="@style/Widget.Material3.Button.TextButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="24dp"
+        android:layout_marginTop="16dp"
         android:text="View Security Logs" />
 
 </LinearLayout>
