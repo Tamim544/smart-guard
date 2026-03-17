@@ -85,8 +85,9 @@ class MotionDetectionService : LifecycleService() {
             val notificationManager = getSystemService(Context.NOTIFICATION_SERVICE) as NotificationManager
             notificationManager.notify(2, notificationHelper.getAlertNotification(eventType))
 
-            // Keep alert active for some time or until user stops
+            // Keep alert active for some time, then auto-stop alarm
             delay(5000)
+            alarmPlayer.stopAlarm()
             isAlertActive = false
         }
     }

@@ -4,6 +4,7 @@ import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.ViewModelProvider
 import com.smartguard.app.databinding.ActivityDashboardBinding
+import com.smartguard.app.service.MotionDetectionService
 import com.smartguard.app.viewmodel.SecurityViewModel
 
 class SecurityDashboardActivity : AppCompatActivity() {
@@ -18,6 +19,12 @@ class SecurityDashboardActivity : AppCompatActivity() {
         viewModel = ViewModelProvider(this)[SecurityViewModel::class.java]
 
         setupUI()
+    }
+
+    override fun onResume() {
+        super.onResume()
+        // Sync ViewModel state with actual service state
+        viewModel.setServiceStatus(MotionDetectionService.isRunning)
     }
 
     private fun setupUI() {

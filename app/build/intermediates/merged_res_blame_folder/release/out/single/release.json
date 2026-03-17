@@ -1,0 +1,22 @@
+[
+    {
+        "merged": "com.smartguard.app-merged_res-46:/layout_activity_history.xml.flat",
+        "source": "com.smartguard.app-main-47:/layout/activity_history.xml"
+    },
+    {
+        "merged": "com.smartguard.app-merged_res-46:/layout_activity_main.xml.flat",
+        "source": "com.smartguard.app-main-47:/layout/activity_main.xml"
+    },
+    {
+        "merged": "com.smartguard.app-merged_res-46:/raw_alarm.mp3.flat",
+        "source": "com.smartguard.app-main-47:/raw/alarm.mp3"
+    },
+    {
+        "merged": "com.smartguard.app-merged_res-46:/layout_activity_dashboard.xml.flat",
+        "source": "com.smartguard.app-main-47:/layout/activity_dashboard.xml"
+    },
+    {
+        "merged": "com.smartguard.app-merged_res-46:/layout_item_incident.xml.flat",
+        "source": "com.smartguard.app-main-47:/layout/item_incident.xml"
+    }
+]

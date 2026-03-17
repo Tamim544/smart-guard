@@ -1,0 +1,19 @@
+{
+    "logs": [
+        {
+            "outputFile": "com.smartguard.app-mergeReleaseResources-44:/values-port/values-port.xml",
+            "map": [
+                {
+                    "source": "/Users/tamimchowdhury/.gradle/caches/9.0-milestone-1/transforms/19e7fd5ad19c11b61470ec32aef8b372/transformed/appcompat-1.6.1/res/values-port/values-port.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "55",
+                        "endOffsets": "106"
+                    }
+                }
+            ]
+        }
+    ]
+}

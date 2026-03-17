@@ -11,6 +11,7 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.core.content.ContextCompat
 import androidx.lifecycle.ViewModelProvider
 import com.smartguard.app.databinding.ActivityMainBinding
+import com.smartguard.app.service.MotionDetectionService
 import com.smartguard.app.viewmodel.SecurityViewModel
 
 class MainActivity : AppCompatActivity() {
@@ -37,6 +38,12 @@ class MainActivity : AppCompatActivity() {
         setupUI()
     }
 
+    override fun onResume() {
+        super.onResume()
+        // Sync ViewModel state with actual service state every time we come back
+        viewModel.setServiceStatus(MotionDetectionService.isRunning)
+    }
+
     private fun setupUI() {
         viewModel.isServiceRunning.observe(this) { isRunning ->
             binding.btnActivate.text = if (isRunning) "DEACTIVATE PROTECTION" else "ACTIVATE PROTECTION"
@@ -60,10 +67,6 @@ class MainActivity : AppCompatActivity() {
         )
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.TIRAMISU) {
             permissions.add(Manifest.permission.POST_NOTIFICATIONS)
-        }
-        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.UPSIDE_DOWN_CAKE) {
-            // Android 14+ needs more specific foreground service permissions
-            // These are already in manifest, but good to check if needed.
         }
 
         val allGranted = permissions.all {
