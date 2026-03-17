@@ -1,0 +1,20 @@
+{
+    "logs": [
+        {
+            "outputFile": "com.smartguard.app-mergeDebugResources-44:/values-watch-v20/values-watch-v20.xml",
+            "map": [
+                {
+                    "source": "/Users/tamimchowdhury/.gradle/caches/9.0-milestone-1/transforms/19e7fd5ad19c11b61470ec32aef8b372/transformed/appcompat-1.6.1/res/values-watch-v20/values-watch-v20.xml",
+                    "from": {
+                        "startLines": "2,5,8",
+                        "startColumns": "4,4,4",
+                        "startOffsets": "55,214,385",
+                        "endLines": "4,7,10",
+                        "endColumns": "12,12,12",
+                        "endOffsets": "209,380,553"
+                    }
+                }
+            ]
+        }
+    ]
+}

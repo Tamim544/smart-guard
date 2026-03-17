@@ -1,0 +1,18 @@
+[
+    {
+        "merged": "com.smartguard.app-mergeDebugResources-45:/layout/activity_dashboard.xml",
+        "source": "com.smartguard.app-main-48:/layout/activity_dashboard.xml"
+    },
+    {
+        "merged": "com.smartguard.app-mergeDebugResources-45:/layout/item_incident.xml",
+        "source": "com.smartguard.app-main-48:/layout/item_incident.xml"
+    },
+    {
+        "merged": "com.smartguard.app-mergeDebugResources-45:/layout/activity_main.xml",
+        "source": "com.smartguard.app-main-48:/layout/activity_main.xml"
+    },
+    {
+        "merged": "com.smartguard.app-mergeDebugResources-45:/layout/activity_history.xml",
+        "source": "com.smartguard.app-main-48:/layout/activity_history.xml"
+    }
+]
