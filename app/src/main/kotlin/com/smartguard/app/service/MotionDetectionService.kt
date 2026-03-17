@@ -3,6 +3,8 @@ package com.smartguard.app.service
 import android.app.NotificationManager
 import android.content.Context
 import android.content.Intent
+import android.content.pm.ServiceInfo
+import android.os.Build
 import android.os.IBinder
 import android.util.Log
 import androidx.lifecycle.LifecycleService
@@ -42,7 +44,20 @@ class MotionDetectionService : LifecycleService() {
         notificationHelper = NotificationHelper(this)
         database = IncidentDatabase.getDatabase(this)
 
-        startForeground(NotificationHelper.NOTIFICATION_ID, notificationHelper.getForegroundNotification())
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.Q) {
+            startForeground(
+                NotificationHelper.NOTIFICATION_ID,
+                notificationHelper.getForegroundNotification(),
+                ServiceInfo.FOREGROUND_SERVICE_TYPE_LOCATION or
+                ServiceInfo.FOREGROUND_SERVICE_TYPE_CAMERA or
+                ServiceInfo.FOREGROUND_SERVICE_TYPE_MEDIA_PLAYBACK
+            )
+        } else {
+            startForeground(
+                NotificationHelper.NOTIFICATION_ID,
+                notificationHelper.getForegroundNotification()
+            )
+        }
 
         observeSensors()
     }

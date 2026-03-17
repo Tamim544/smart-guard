@@ -5,6 +5,7 @@ import android.content.BroadcastReceiver
 import android.content.Context
 import android.content.Intent
 import android.content.IntentFilter
+import android.content.pm.ServiceInfo
 import android.os.IBinder
 import android.util.Log
 import android.view.Gravity
@@ -33,10 +34,18 @@ class ShutdownPreventionService : LifecycleService() {
         isRunning = true
         notificationHelper = NotificationHelper(this)
 
-        startForeground(
-            NotificationHelper.NOTIFICATION_ID + 20,
-            notificationHelper.getShutdownProtectionNotification()
-        )
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.Q) {
+            startForeground(
+                NotificationHelper.NOTIFICATION_ID + 20,
+                notificationHelper.getShutdownProtectionNotification(),
+                ServiceInfo.FOREGROUND_SERVICE_TYPE_LOCATION or ServiceInfo.FOREGROUND_SERVICE_TYPE_CAMERA
+            )
+        } else {
+            startForeground(
+                NotificationHelper.NOTIFICATION_ID + 20,
+                notificationHelper.getShutdownProtectionNotification()
+            )
+        }
 
         registerShutdownReceiver()
         Log.d(TAG, "Shutdown prevention service started")
@@ -75,7 +84,12 @@ class ShutdownPreventionService : LifecycleService() {
             addAction(Intent.ACTION_SHUTDOWN)
             addAction(Intent.ACTION_SCREEN_OFF)
         }
-        registerReceiver(shutdownReceiver, filter)
+
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.TIRAMISU) {
+            registerReceiver(shutdownReceiver, filter, Context.RECEIVER_NOT_EXPORTED)
+        } else {
+            registerReceiver(shutdownReceiver, filter)
+        }
     }
 
     override fun onDestroy() {

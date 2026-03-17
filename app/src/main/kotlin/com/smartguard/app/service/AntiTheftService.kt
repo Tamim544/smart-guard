@@ -3,6 +3,8 @@ package com.smartguard.app.service
 import android.app.NotificationManager
 import android.content.Context
 import android.content.Intent
+import android.content.pm.ServiceInfo
+import android.os.Build
 import android.os.IBinder
 import android.util.Log
 import androidx.lifecycle.LifecycleService
@@ -46,7 +48,20 @@ class AntiTheftService : LifecycleService() {
         emailSender = EmailSender()
         prefs = PreferencesManager(this)
 
-        startForeground(NotificationHelper.NOTIFICATION_ID + 10, notificationHelper.getAntiTheftNotification())
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.Q) {
+            startForeground(
+                NotificationHelper.NOTIFICATION_ID + 10,
+                notificationHelper.getAntiTheftNotification(),
+                ServiceInfo.FOREGROUND_SERVICE_TYPE_LOCATION or
+                ServiceInfo.FOREGROUND_SERVICE_TYPE_CAMERA or
+                ServiceInfo.FOREGROUND_SERVICE_TYPE_MEDIA_PLAYBACK
+            )
+        } else {
+            startForeground(
+                NotificationHelper.NOTIFICATION_ID + 10,
+                notificationHelper.getAntiTheftNotification()
+            )
+        }
     }
 
     override fun onStartCommand(intent: Intent?, flags: Int, startId: Int): Int {
